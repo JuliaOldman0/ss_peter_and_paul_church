@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 2
 
       - name: Deploy to FTP Server
-        uses: juliaoldman0/ftp-action@v2
+        uses: juliaoldman0/ftp-action@main
         with:
           host: ftp.sspeterandpaulelizabeth.com
           username: lutron1
