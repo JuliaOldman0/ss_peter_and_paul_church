@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 2
 
       - name: Deploy to FTP Server
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@latest
         with:
           host: ftp.sspeterandpaulelizabeth.com
           username: lutron1
