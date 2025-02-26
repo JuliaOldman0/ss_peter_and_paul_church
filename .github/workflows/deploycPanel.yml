@@ -1,4 +1,4 @@
-name: FTP Deployment
+name: Deploy via FTP
 
 on:
   push:
@@ -6,23 +6,19 @@ on:
       - main
 
 jobs:
-  FTP-Deploy-Action:
-    name: Deploy via FTP
+  deploy:
+    name: Upload files via FTP
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
 
       - name: Deploy to FTP Server
-        uses: SamKirkland/FTP-Deploy-Action@latest
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4  # Correct version
         with:
-          host: ftp.sspeterandpaulelizabeth.com
-          username: lutron1
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: .
-          remoteDir: /
-          port: 21
-          protocol: ftp
+          local-dir: './'
+          server-dir: '/public_html/'
