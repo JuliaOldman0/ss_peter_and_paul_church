@@ -1,0 +1,26 @@
+body {
+  background: url(../images/blue_peter-paul.jpg);
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent overlay */
+  background-blend-mode: multiply;
+}
+
+.page {
+    background-color: #EDEDED;
+    max-width: 1280px;
+    border-radius: 8px;
+    max-height: 100%;
+    margin: 0 auto;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-top: 40px;
+    
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+

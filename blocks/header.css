@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.header__logo {
+  height: 110px;
+  width: 90px;
+}
+
+.header__column {
+  flex-direction: column;
+  padding-left: 40px;
+  margin-top: 10px;
+}
+
+.header__title {
+  font-size: 34px;
+  color: #070080;
+}
+
+.header__subtitle {
+  display: block;
+  text-align: center;
+  color: #070080;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 600;
+}
